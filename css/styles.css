@@ -1,0 +1,527 @@
+/* Global */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  margin: 0;
+  line-height: 1.8em;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.separator {
+  background: #ccc;
+  height: 25px;
+  margin: 25px auto;
+  width: 2px;
+}
+
+.nav-container {
+  display: inline-flex;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  background-color: #4f4f4f;
+  z-index: 1;
+}
+
+.nav-home-container {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.nav-li-container {
+  width: 100%;
+}
+
+.nav-li-container ul {
+  background-color: #4f4f4f;
+  height: 50px;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-li-container ul li {
+
+  margin-right: 20px;
+  align-content: center;
+  text-align: center;
+}
+
+/* Landing */
+
+#RodrigoToyama,
+#WhereDoILive,
+#MyFavouritePet,
+#Studies,
+#Hobbies {
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+#RodrigoToyama {
+  background-image: url('../images/barrio7-unsam.jpg');
+  min-height: 100%;
+}
+
+#WhereDoILive {
+  background-image: url('../images/barrio3-sanmartin.jpg');
+  min-height: 400px;
+}
+
+#MyFavouritePet {
+  background-image: url('../images/labrador2.jpg');
+  min-height: 400px;
+}
+
+#Studies {
+  background-image: url('../images/barrio5-unsam.jpg');
+  min-height: 400px;
+}
+
+#Hobbies {
+  background-image: url('../images/hobbie-rkmd3.jpg');
+  min-height: 400px;
+}
+
+.landingText {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 40px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.landingText .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.landingText .border .trans {
+  background-color: transparent;
+}
+
+
+/* Main */
+
+#WhoAmI {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.avatar {
+  margin-bottom: 25px;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  margin: 20px;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.text {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  line-height: 2em;
+}
+
+.card-text ul {
+  list-style: none;
+  letter-spacing: 5px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  padding-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  width: 300px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: 15em;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+  margin-bottom: 1.25rem;
+}
+
+.card-text {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  font-weight: 400;
+}
+
+.main-container-card {
+  display: flex;
+  position: relative;
+  height: 400px;
+  width: 1000px;
+  margin: 80px auto;
+  background-color: #FFF;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.main-container-card-img {
+  height: 400px;
+}
+
+.main-card-img {
+  height: 100%;
+}
+
+.main-container-card .main-card-text {
+  padding: 20px 30px 50px;
+}
+
+.main-card-text h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.long-separator {
+  background: #7A7A7A;
+  height: 2px;
+  margin: 25px auto;
+  width: 400px;
+}
+
+.main-card-text p {
+  text-align: justify;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.cards-wrapper-h {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.card1,
+.card2,
+.card3 {
+  position: relative;
+  justify-content: space-around;
+  height: 100%;
+  width: 400px;
+  margin: 20px 30px 50px 30px;
+  background-color: #FFF;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.card-img {
+  height: 270px;
+  width: 100%;
+}
+
+.card1 p,
+.card2 p,
+.card3 p {
+  text-align: justify;
+  margin: 20px;
+}
+
+.cards-wrapper-v {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.card-img-container {
+  background-color: #EF8D9C;
+  height: 300px;
+}
+
+.card10,
+.card11,
+.card12 {
+  position: relative;
+  justify-content: space-around;
+  height: 100%;
+  width: 280px;
+  margin: 20px 30px 50px 30px;
+  background-color: #FFF;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.card12 {
+  width: 400px;
+}
+
+.card10 p,
+.card11 p,
+.card12 p {
+  text-align: justify;
+  margin: 20px;
+}
+
+.card4,
+.card5,
+.card6 {
+  position: relative;
+  justify-content: space-between;
+  height: 100%;
+  width: 700px;
+  margin: 20px 0 20px 0;
+  background-color: #FFF;
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.40);
+}
+
+.card4 .card-img-container {
+  background-color: #004968;
+  opacity: 0.90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card5 .card-img-container {
+  background-color: #004968;
+  opacity: 0.90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card6 .card-img-container {
+  background-color: #025FA5;
+  opacity: 0.90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-title-span {
+  position: absolute;
+  top: 57%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.card-subtitle-span {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.card4 .card-study-text {
+  background-color: #004968;
+  opacity: 0.90;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #fff;
+}
+
+.card5 .card-study-text {
+  background-color: #004968;
+  opacity: 0.90;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #fff;
+}
+
+.card6 .card-title-span {
+  position: absolute;
+  top: 54%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.card6 .card-subtitle-span {
+  position: absolute;
+  top: 60%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.card6 .card-study-text {
+  background-color: #025FA5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #fff;
+  opacity: 0.90;
+}
+
+.card6 .card-text-container {
+  height: 180px;
+}
+
+.card6 li {
+  margin-left: 10px;
+  text-align: center;
+}
+
+.card7,
+.card8,
+.card9 {
+  position: relative;
+  justify-content: space-around;
+  height: 100%;
+  width: 500px;
+  margin: 20px 30px 50px 30px;
+  background-color: #FFF;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+}
+
+.card7 .card-study-text,
+.card8 .card-study-text,
+.card9 .card-study-text {
+  text-align: justify;
+  margin: 20px;
+}
+
+.card7 .card-title-span {
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.card8 .card-title-span {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.card9 .card-title-span {
+  position: absolute;
+  top: 57%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+
+/* Footer */
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: lightgray;
+}
+
+.contactMe,
+.navIcons {
+  flex: 1;
+}
+
+.navIcons {
+  text-align: right;
+}
+
+.navIcons a,
+.contactMe a,
+.contactMe img {
+  display: inline-block;
+  vertical-align: middle;
+}
