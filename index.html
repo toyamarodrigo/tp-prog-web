@@ -5,34 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Proza+Libre:400,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
   <title>TP - Programacion Web I</title>
 </head>
 
 <body>
 
-  <nav class="nav-container">
-    <div class="nav-home-container">
-      <a href="index.html">Home</a>
-    </div>
-    <div class="nav-li-container">
-      <ul>
-        <li><a href="#WhereDoILive">Where Do I Live</a></li>
-        <li><div class="separator"></div></li>
-        <li><a href="#MyFavouritePet">Favourite Pet</a></li>
-        <li><div class="separator"></div></li>
-        <li><a href="#Studies">Studies</a></li>
-        <li><div class="separator"></div></li>
-        <li><a href="#Hobbies">Hobbies</a></li>
-        <li><div class="separator"></div></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
   <header id="RodrigoToyama">
+    <div class="nav-container">
+      <a href="index.html">Home</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#WhereDoILive">Where do I live</a></li>
+          <li><a href="#MyFavouritePet">Favourite Pet</a></li>
+          <li><a href="#Studies">Studies</a></li>
+          <li><a href="#Hobbies">Hobbies</a></li>
+        </ul>
+      </nav>
+      <a class="btn-contact">Contact</a>
+    </div>
+
     <div class="landingWrapper">
       <div class="landingText">
         <span class="border trans">Rodrigo Toyama.</span>
@@ -40,21 +34,23 @@
     </div>
   </header>
 
+
   <main>
-    <section id="WhoAmI">
-      <img src="images/avatar.jpg" alt="avatar" class="avatar">
-      <h2 class="subtitle">Who am I?</h2>
-      <div class="text-container">
-        <p class="text">
-          Rodrigo Toyama, 25 years old, Computer Programming and System Analyst Student with experience in Front and
-          Back-End development and solving business problems.
-        </p>
-      </div>
-      <section class="skills">
+    <div class="section-container">
+      <section id="WhoAmI">
+        <img src="images/avatar.svg" alt="avatar" class="avatar" width="250px">
+        <h2 class="subtitle">Who am I?</h2>
+        <div class="text-container">
+          <p class="text">
+            Rodrigo Toyama, 25 years old, Computer Programming and System Analyst Student with experience in Front and
+            Back-End development and solving business problems.
+          </p>
+        </div>
+      </section>
+      <section class="section1">
         <div class="card">
           <div class="card-content">
             <h3 class="card-title">Skills</h3>
-            <div class="separator"></div>
             <div class="card-text">
               <ul class="card-text ul">
                 <li>HTML5</li>
@@ -70,7 +66,6 @@
         <div class="card">
           <div class="card-content">
             <h3 class="card-title">Others</h3>
-            <div class="separator"></div>
             <div class="card-text">
               <ul class="card-text ul">
                 <li>MySQL</li>
@@ -82,19 +77,20 @@
           </div>
         </div>
       </section>
+    </div>
 
-    </section>
 
-
-    <section id="WhereDoILive">
-      <div class="landingWrapper">
-        <div class="landingText">
-          <span class="border trans">
-            Where Do I Live?
-          </span>
+    <div class="section-container">
+      <section id="WhereDoILive">
+        <div class="landingWrapper">
+          <div class="landingText">
+            <span class="border trans">
+              Where Do I Live?
+            </span>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <section class="section2">
       <div class="main-container-card">
@@ -103,9 +99,10 @@
         </div>
         <div class="main-card-text">
           <h3>Villa Ballester</h3>
-          <div class="separator"></div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima neque autem tenetur consequatur obcaecati
-            eum earum nam nesciunt veniam optio?</p>
+          <div class="separator-h"></div>
+          <p>City located in the northern Greater Buenos Aires urban area and it is part of the General San Martín
+            Partido in Buenos Aires Province, Argentina. It is served by the Línea Mitre commuter railway with its
+            station also named Villa Ballester. Founded on 26 October 1889.</p>
         </div>
       </div>
 
@@ -113,280 +110,314 @@
         <div class="cards-wrapper-h">
           <div class="card1">
             <img src="images/barrio1-bk.jpg" alt="foto barrio1" class="card-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio
-              officiis nemo voluptate delectus, quibusdam ducimus impedit odit unde culpa.</p>
+            <p>Burger King in the center of the town, it opened a few months ago. it's very populated at all hours of
+              the day.</p>
           </div>
           <div class="card2">
             <img src="images/barrio4-sanmartin.jpg" alt="foto barrio2" class="card-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque veritatis incidunt
-              architecto porro corrupti ut dolore, similique rem perferendis voluptates?</p>
+            <p>Peatonal - San Martin, Place with great movement of people at weekends. You can buy from cloths to
+              electronics all around. Not recommend to go at night at this places.</p>
           </div>
           <div class="card3">
             <img src="images/barrio6-unsam.jpg" alt="foto barrio3" class="card-img">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi tempora tempore
-              quod
-              blanditiis magni molestias maxime excepturi veniam hic sunt!</p>
+            <p>Universidad de San Martin - Beautiful place with a lot of green, many buildings where you can study in
+              peace. Weekends is close.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="MyFavouritePet">
-      <div class="landingWrapper">
-        <div class="landingText">
-          <span class="border trans">
-            My Favourite Pet
-          </span>
+    <div class="section-container">
+      <section id="MyFavouritePet">
+        <div class="landingWrapper">
+          <div class="landingText">
+            <span class="border trans">
+              My Favourite Pet
+            </span>
+          </div>
         </div>
+      </section>
+    </div>
+
+    <section class="myfavouritedog-info">
+      <h2 class="subtitle">Why Labradors are the best dogs in the Worlds?</h2>
+      <div class="text-container">
+        <p class="text">
+          Everybody loves Labrador retrievers. In fact, Labradors are the most popular dog breed in America. You’re
+          pretty likely to see at least a couple of these energetic, eager-to-please dogs when you spend time outside
+          at the park or in your neighborhood. Labs make great family dogs. They can learn to play gently with small
+          kids. And they also make excellent hunting companions. Plus, Labrador retrievers are always ready for
+          adventure, whether that’s a hike in the mountains or a trip to the beach. And they’ll even curl up on the
+          couch with you.
+        </p>
       </div>
     </section>
 
-    <section class="section3">
+
+    <div class="section3">
       <div class="cards-container">
         <div class="cards-wrapper-h">
           <div class="card10">
-            <img src="images/labrador.jpg" alt="foto perro1" class="card-img">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aut cumque est
-              dolores deleniti libero fuga accusantium deserunt ipsam nulla.</p>
-          </div>
-          <div class="card12">
-            <img src="images/labradores.jpg" alt="foto perro3" class="card-img">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quisquam ullam
-              accusamus iste fugiat hic vitae libero? Quae, nemo facilis.</p>
+            <a href="images/animal1-grande.jpg">
+              <img src="images/animal1-chico.jpg" alt="foto perro1" class="card-img">
+            </a>
           </div>
           <div class="card11">
-            <img src="images/labradores-chicos.jpg" alt="foto perro2" class="card-img">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius facilis delectus unde
-              consequatur velit ratione est optio eaque voluptatem asperiores?</p>
+            <a href="images/animal4-grande.jpg">
+              <img src="images/animal4-chico.jpg" alt="foto perro2" class="card-img">
+            </a>
+          </div>
+          <div class="card12">
+            <a href="images/animal2-grande.jpg">
+              <img src="images/animal2-chico.jpg" alt="foto perro3" class="card-img">
+            </a>
           </div>
         </div>
       </div>
       <div class="cards-container">
         <div class="cards-wrapper-h">
           <div class="card10">
-            <img src="images/labrador.jpg" alt="foto barrio1" class="card-img">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatem
-              blanditiis exercitationem laborum accusantium saepe, esse nihil voluptates ea labore.</p>
-          </div>
-          <div class="card12">
-            <img src="images/labradores.jpg" alt="foto barrio3" class="card-img">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam delectus labore
-              reiciendis similique nisi dolorum eligendi non maiores. Laborum, illum!</p>
+            <a href="images/animal3-grande.jpg">
+              <img src="images/animal3-chico.jpg" alt="foto perro4" class="card-img">
+            </a>
           </div>
           <div class="card11">
-            <img src="images/labradores-chicos.jpg" alt="foto barrio2" class="card-img">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad officiis
-              illum quam! Qui, voluptates a nesciunt sit reiciendis quia.</p>
+            <a href="images/animal5-grande.jpg">
+              <img src="images/animal5-chico.jpg" alt="foto perro5" class="card-img">
+            </a>
+          </div>
+          <div class="card12">
+            <a href="images/animal6-grande.jpg">
+              <img src="images/animal6-chico.jpg" alt="foto perro6" class="card-img">
+            </a>
           </div>
         </div>
       </div>
-      </div>
-    </section>
+    </div>
 
-    <section id="Studies">
-      <div class="landingWrapper">
-        <div class="landingText">
-          <span class="border trans">
-            Studies
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section4">
-      <div class="cards-container">
-        <div class="cards-wrapper-v">
-          <div class="card4">
-            <div class="card-img-container">
-              <img src="images/colegio-logo-fja.jpg" alt="logo primeria">
-            </div>
-            <div class="card-text-container">
-              <div class="card-title-span">
-                <span>Primaria</span>
-              </div>
-              <div class="card-subtitle-span">
-                <span>Colegio Fernando José Aguer</span>
-              </div>
-              <div class="card-study-text">
-                <ul>
-                  <li>TITULO</li>
-                  <li>AñOS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card5">
-            <div class="card-img-container">
-              <img src="images/colegio-logo-ijh.jpg" alt="logo secundaria">
-            </div>
-            <div class="card-text-container">
-              <div class="card-title-span">
-                <span>Secundaria</span>
-              </div>
-              <div class="card-subtitle-span">
-                <span>Instituto Jose Hernandez</span>
-              </div>
-              <div class="card-study-text">
-                <ul>
-                  <li>TITULO</li>
-                  <li>AñOS</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="card6">
-            <div class="card-img-container">
-              <img src="images/eduit-logo.png" alt="logo cursos">
-            </div>
-            <div class="card-text-container">
-              <div class="card-title-span">
-                <span>Cursos</span>
-              </div>
-              <div class="card-subtitle-span">
-                <span>Educacion IT</span>
-              </div>
-              <div class="card-study-text">
-                <ul>
-                  <li>Maquetacion Web: HTML5 y CSS</li>
-                  <li>Java Advanced Programming</li>
-                  <li>Java Hibernate</li>
-                  <li>Base de Datos y SQL</li>
-                </ul>
-              </div>
-            </div>
+    <div class="section-container">
+      <section id="Studies">
+        <div class="landingWrapper">
+          <div class="landingText">
+            <span class="border trans">
+              Studies
+            </span>
           </div>
         </div>
-      </div>
+      </section>
 
-
-
-    </section>
-
-    <section id="Hobbies">
-      <div class="landingWrapper">
-        <div class="landingText">
-          <span class="border trans">
-            Hobbies
-          </span>
-        </div>
-      </div>
-    </section>
-
-    <section class="section5">
-      <div class="cards-container">
-        <div class="cards-wrapper-h">
-          <div class="card7">
-            <img src="images/hobbie-rkmd2.jpg" alt="foto barrio1" class="card-img">
-            <div class="card-text-container">
-              <div class="card-title-span">
-                <h3>Ryukyukoku Matsuridaiko</h3>
+      <section class="section4">
+        <div class="cards-container">
+          <div class="cards-wrapper-v">
+            <div class="card4">
+              <div class="card-img-container">
+                <img src="images/colegio-logo-fja.jpg" alt="logo primeria">
               </div>
-              <div class="card-study-text">
-                <ul>
-                  <li>
-                    <h3>Created in 1982</h3>
-                  </li>
-                  <div class="long-separator"></div>
-                  <li>
-                    <p>
-                      Eisa Group, born in Okinawa / Japan. It has branches all over the world (Argentina, Brasil, Peru,
-                      Bolivia, Mexico, Los Angeles, Republica Checa, Japan and mother branch Okinawa).
-                    </p>
-                  </li>
-                </ul>
+              <div class="card-text-container">
+                <div class="card-title-span">
+                  <span>Primaria</span>
+                </div>
+                <div class="card-subtitle-span">
+                  <span>Colegio Fernando José Aguer</span>
+                </div>
+                <div class="card-study-text">
+                  <ul>
+                    <li>Completo</li>
+                    <li>1999-2005</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card8">
-            <img src="images/hobbie-srv.jpg" alt="foto barrio2" class="card-img">
-            <div class="card-text-container">
-              <div class="card-title-span">
-                <h3>Stevie Ray Vaughan</h3>
+            <div class="card5">
+              <div class="card-img-container">
+                <img src="images/colegio-logo-ijh.jpg" alt="logo secundaria">
               </div>
-              <div class="card-study-text">
-                <ul>
-                  <li>
-                    <h3>
-                      October 3, 1954 – August 27, 1990
-                    </h3>
-                  </li>
-                  <div class="long-separator"></div>
-                  <li>
-                    <p>
-                      Stevie Ray Vaughan (SRV) was an American musician, singer, songwriter, and record producer, and
-                      one of the most influential
-                      guitarists in the revival of blues in the 1980s. He is commonly referred to as one of the greatest
-                      guitar players of all time.
-                    </p>
-                  </li>
-                </ul>
+              <div class="card-text-container">
+                <div class="card-title-span">
+                  <span>Secundaria</span>
+                </div>
+                <div class="card-subtitle-span">
+                  <span>Instituto Jose Hernandez</span>
+                </div>
+                <div class="card-study-text">
+                  <ul>
+                    <li>Bachillerato Comunicacion, arte y diseño</li>
+                    <li>2006 - 2011</li>
+                  </ul>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="card9">
-            <img src="images/hobbie-bb.jpg" alt="foto barrio3" class="card-img">
-            <div class="card-text-container">
-              <div class="card-study-text">
-                <ul>
-                  <li>
-                    <h3>January 20, 2008 - September 29, 2013</h3>
-                  </li>
-                  <div class="long-separator"></div>
-                  <li>
-                    <p>
-                      Breaking Bad is an American neo-Western crime drama television series created and produced by
-                      Vince Gilligan.
-                      Breaking Bad is widely regarded as one of the greatest television series of all time.
-                      By the time the series finale aired, it was among the most-watched cable shows on American
-                      television.
-                    </p>
-                  </li>
-                </ul>
+            <div class="card13">
+              <div class="card-img-container">
+                <img src="images/unsam-logo.jpeg" alt="logo unsam">
+              </div>
+              <div class="card-text-container">
+                <div class="card-study-text">
+                  <ul>
+                    <li>Tecnico en Programacion Informatica</li>
+                    <li>En curso</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card6">
+              <div class="card-img-container">
+                <img src="images/eduit-logo.png" alt="logo cursos">
+              </div>
+              <div class="card-text-container">
+                <div class="card-title-span">
+                  <span>Cursos</span>
+                </div>
+                <div class="card-subtitle-span">
+                  <span>Educacion IT</span>
+                </div>
+                <div class="card-study-text">
+                  <ul>
+                    <li>2018</li>
+                    <li>Maquetacion Web: HTML5 y CSS</li>
+                    <li>Java Advanced Programming</li>
+                    <li>Java Hibernate</li>
+                    <li>Base de Datos y SQL</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
+    <div class="section-container">
+      <section id="Hobbies">
+        <div class="landingWrapper">
+          <div class="landingText">
+            <span class="border trans">
+              Hobbies
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section5">
+        <div class="cards-container">
+          <div class="cards-wrapper-h">
+            <div class="card7">
+              <a href="https://www.youtube.com/watch?v=gwadJivUc0c">
+                <img src="images/hobbie-rkmd2.jpg" alt="foto barrio1" class="card-img">
+              </a>
+              <div class="card-text-container">
+                <div class="card-title-span">
+                  <h3>Ryukyukoku Matsuridaiko</h3>
+                </div>
+                <div class="card-study-text">
+                  <ul>
+                    <li>
+                      <h3>Created in 1982</h3>
+                    </li>
+                    <li class="long-separator"></li>
+                    <li>
+                      <p>
+                        Eisa Group, born in Okinawa / Japan. It has branches all over the world (Argentina, Brasil,
+                        Peru,
+                        Bolivia, Mexico, Los Angeles, Republica Checa, Japan and mother branch Okinawa).
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card8">
+              <a href="https://www.youtube.com/watch?v=evjMjpd4PNM">
+                <img src="images/hobbie-srv.jpg" alt="foto barrio2" class="card-img">
+              </a>
+              <div class="card-text-container">
+                <div class="card-title-span">
+                  <h3>Stevie Ray Vaughan</h3>
+                </div>
+                <div class="card-study-text">
+                  <ul>
+                    <li>
+                      <h3>
+                        October 3, 1954 – August 27, 1990
+                      </h3>
+                    </li>
+                    <li class="long-separator"></li>
+                    <li>
+                      <p>
+                        Stevie Ray Vaughan (SRV) was an American musician, singer, songwriter, and record producer, and
+                        one of the most influential
+                        guitarists in the revival of blues in the 1980s. He is commonly referred to as one of the
+                        greatest
+                        guitar players of all time.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card9">
+              <a href="https://www.netflix.com/ar/title/70143836">
+                <img src="images/hobbie-bb.jpg" alt="foto barrio3" class="card-img">
+              </a>
+              <div class="card-text-container">
+                <div class="card-study-text">
+                  <ul>
+                    <li>
+                      <h3>January 20, 2008 - September 29, 2013</h3>
+                    </li>
+                    <li class="long-separator"></li>
+                    <li>
+                      <p>
+                        Breaking Bad is an American neo-Western crime drama television series created and produced by
+                        Vince Gilligan.
+                        Breaking Bad is widely regarded as one of the greatest television series of all time.
+                        By the time the series finale aired, it was among the most-watched cable shows on American
+                        television.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
 
   </main>
 
-  <footer>
-
-    <section>
-      <form action="submit">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quos maiores atque doloribus temporibus aut?
-          Quam, aspernatur. Ipsam architecto nostrum quis? Expedita corrupti dolores veniam voluptas asperiores numquam
-          ipsa nesciunt, fugit officia repellendus, eveniet nam voluptatum dolorem quaerat, ab saepe enim culpa?
-          Praesentium, maiores? Voluptates ipsa eius reiciendis unde nostrum, facere consequuntur. Necessitatibus sed ex
-          maiores odit dolorum ratione hic delectus neque doloremque laborum molestiae labore eos expedita corporis
-          quasi id natus incidunt, quod, deleniti minima a alias illo culpa voluptatem! Veritatis perferendis inventore
-          non dolores illum. Adipisci recusandae labore officiis est vero unde iste aspernatur minima esse! Aperiam,
-          quos.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab explicabo illum est quam hic adipisci, enim saepe
-          mollitia non porro, provident accusantium esse natus pariatur praesentium omnis optio expedita? Cupiditate
-          dolor est facilis provident accusamus reprehenderit labore, voluptatum recusandae libero aliquid asperiores
-          iste fugiat impedit velit quisquam nulla aspernatur dolore! Dolor adipisci nam assumenda odit? Quae assumenda
-          sunt nostrum nemo ipsa cum. Error excepturi aut modi commodi. Officia eum illo aliquam reprehenderit a qui est
-          facere cum quisquam, dolorum tempora iure, exercitationem tempore, asperiores blanditiis modi! Sit aliquid
-          vero error, exercitationem fugiat beatae eius, sed, pariatur ad voluptatem quos voluptatibus.
+  <footer id="Footer">
+    <section class="section-footer-container">
+      <div class="footer-left">
+        <h3>TOYAMA RODRIGO</h3>
+        <p class="link-items">
+          <a href="#RodrigoToyama">Home</a> ·
+          <a href="#WhereDoILive">Where do I live</a> ·
+          <a href="#MyFavouritePet">My Favourite Pet</a> ·
+          <a href="#Hobbies">Hobbies</a> ·
+          <a href="#Contact">Contact</a> ·
         </p>
-      </form>
-    </section>
+        <div class="media-logos">
+          <a href="https://www.facebook.com/rodrigo.toyama" target="_blank"><img src="images/logo-facebook.svg"
+              alt="Logo Facebook" width="54"></a>
+          <a href="https://twitter.com/rtbangu" target="_blank"><img src="images/logo-twitter.svg" alt="Logo Twitter"
+              width="54"></a>
+          <a href="https://www.instagram.com/rt.codes" target="_blank"><img src="images/logo-instagram.svg"
+              alt="Logo Instagram" width="54"></a>
+          <a href="https://github.com/toyamarodrigo" target="_blank"><img src="images/logo-github.svg" alt="Logo Github"
+              width="54"></a>
+        </div>
+      </div>
 
-    <div class="nav">
-      <div class="contactMe">
-        <a href="" alt="chat logo">Contact me</a>
+      <div class="footer-right">
+        <p>Contact Us</p>
+        <form action="submit" method="POST">
+          <input type="text" name="email" placeholder="Email">
+          <textarea name="message" placeholder="Message"></textarea>
+          <button>Send</button>
+        </form>
       </div>
-      <div class="navIcons">
-        <a href=""><img src="images/logo-facebook.svg" alt="facebook logo" width="64"></a>
-        <a href=""><img src="images/logo-instagram.svg" alt="instagram logo" width="64"></a>
-        <a href=""><img src="images/logo-twitter.svg" alt="twitter logo" width="64"></a>
-        <a href=""><img src="images/logo-github.svg" alt="github logo" width="64"></a>
-      </div>
-    </div>
+    </section>
   </footer>
 
 </body>

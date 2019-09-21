@@ -14,6 +14,9 @@ html {
   height: 100%;
   margin: 0;
   line-height: 1.8em;
+  color: #000;
+  background-color: #eeeeee;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -25,46 +28,59 @@ a {
   color: #fff;
 }
 
-.separator {
+.separator-v {
   background: #ccc;
   height: 25px;
   margin: 25px auto;
   width: 2px;
 }
 
+.separator-h {
+  background: #ccc;
+  height: 2px;
+  margin: 25px auto;
+  width: 50px;
+}
+
 .nav-container {
-  display: inline-flex;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  background-color: #4f4f4f;
-  z-index: 1;
-}
-
-.nav-home-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  margin-left: 30px;
+  padding: 15px 10%;
+  background-color: #222831;
 }
 
-.nav-li-container {
-  width: 100%;
+.nav-container a {
+  color: #eeeeee;
 }
 
-.nav-li-container ul {
-  background-color: #4f4f4f;
-  height: 50px;
-  display: inline-flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
 }
 
-.nav-li-container ul li {
+.nav-links li a {
+  color: #eeeeee;
+  transition: all 0.3s ease 0s;
+}
 
-  margin-right: 20px;
-  align-content: center;
-  text-align: center;
+.nav-links li a:hover {
+  color: #d65a31;
+}
+
+.btn-contact {
+  font-family: 'Open Sans', sans-serif;
+  padding: 9px 25px;
+  background-color: #d65a31;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: #eeeeee;
+}
+
+.btn-contact:hover {
+  background-color: #af492a;
 }
 
 /* Landing */
@@ -75,7 +91,7 @@ a {
 #Studies,
 #Hobbies {
   position: relative;
-  opacity: 0.70;
+  opacity: 1;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,7 +110,7 @@ a {
 }
 
 #MyFavouritePet {
-  background-image: url('../images/labrador2.jpg');
+  background-image: url('../images/animal1-grande.jpg');
   min-height: 400px;
 }
 
@@ -120,9 +136,10 @@ a {
 }
 
 .landingText .border {
-  background-color: #111;
+  background-color: #222831;
   color: #fff;
   padding: 20px;
+  font-family: 'Proza Libre', sans-serif;
 }
 
 .landingText .border .trans {
@@ -132,9 +149,16 @@ a {
 
 /* Main */
 
-#WhoAmI {
+.section-container {
+  min-height: 100%;
+}
+
+#WhoAmI,
+.myfavouritedog-info {
   text-align: center;
-  padding: 50px 80px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding: 50px 80px 20px 80px;
 }
 
 .avatar {
@@ -163,11 +187,11 @@ a {
   letter-spacing: 5px;
 }
 
-.skills {
+.section1 {
   display: flex;
   justify-content: space-around;
-  padding-bottom: 30px;
-  padding-top: 20px;
+  height: 100%;
+  margin-bottom: 70px;
 }
 
 .card {
@@ -190,6 +214,7 @@ a {
   padding: 1rem;
   height: 15em;
   margin-bottom: 15px;
+  align-items: center;
 }
 
 .card-title {
@@ -206,8 +231,11 @@ a {
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.5;
+  margin-top: 10px;
   margin-bottom: 1.25rem;
   font-weight: 400;
+  align-items: center;
+  text-align: center;
 }
 
 .main-container-card {
@@ -276,6 +304,7 @@ a {
 .card-img {
   height: 270px;
   width: 100%;
+  height: auto;
 }
 
 .card1 p,
@@ -305,15 +334,11 @@ a {
 .card12 {
   position: relative;
   justify-content: space-around;
-  height: 100%;
-  width: 280px;
   margin: 20px 30px 50px 30px;
   background-color: #FFF;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-}
-
-.card12 {
   width: 400px;
+  height: 100%;
 }
 
 .card10 p,
@@ -323,9 +348,14 @@ a {
   margin: 20px;
 }
 
+.card11 {
+  width: 250px;
+}
+
 .card4,
 .card5,
-.card6 {
+.card6,
+.card13 {
   position: relative;
   justify-content: space-between;
   height: 100%;
@@ -357,6 +387,25 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.card13 .card-img-container {
+  background-color: #fff;
+  opacity: 0.90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card13 .card-study-text {
+  background-color: #fff;
+  opacity: 0.90;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #000;
 }
 
 .card-title-span {
@@ -446,6 +495,8 @@ a {
   text-align: center;
 }
 
+
+
 .card7,
 .card8,
 .card9 {
@@ -503,25 +554,103 @@ a {
 
 /* Footer */
 
-.nav {
-  display: flex;
-  align-items: center;
-  height: 100px;
-  background-color: lightgray;
+footer {
+  background: #222831;
 }
 
-.contactMe,
-.navIcons {
-  flex: 1;
-}
-
-.navIcons {
-  text-align: right;
-}
-
-.navIcons a,
-.contactMe a,
-.contactMe img {
+.section-footer-container {
   display: inline-block;
-  vertical-align: middle;
+  width: 100%;
+  padding: 50px 60px 40px;
+  background-color: #222831;
+}
+
+.section-footer-container .footer-left {
+  float: left;
+}
+
+.section-footer-container .link-items {
+  color: #eeeeee;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.section-footer-container h3 {
+  color: #eeeeee;
+  font: normal 30px 'Proza Libre', sans-serif;
+  margin: 0 0 20px;
+  letter-spacing: 8px;
+}
+
+.section-footer-container .media-logos {
+  margin-top: 50px;
+}
+
+.section-footer-container .media-logos a {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.section-footer-container .footer-right {
+  float: right;
+}
+
+.section-footer-container form {
+  display: inline-block;
+}
+
+.section-footer-container .footer-right p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: #ffffff;
+}
+
+.section-footer-container form input {
+  display: block;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  color: #d1d2d2;
+  width: 400px;
+  padding: 18px;
+}
+
+.section-footer-container form textarea {
+  display: block;
+  height: 100px;
+  margin-bottom: 20px;
+  border-radius: 3px;
+  background-color: #eeeeee;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+  font: inherit;
+  font-size: 14px;
+  color: #d1d2d2;
+  width: 400px;
+  padding: 18px;
+}
+
+.section-footer-container form button {
+  border-radius: 3px;
+  background-color: #d65a31;
+  color: #eeeeee;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.section-footer-container form button:hover {
+  background-color: #af492a;
 }
