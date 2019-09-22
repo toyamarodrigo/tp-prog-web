@@ -28,6 +28,12 @@ a {
   color: #fff;
 }
 
+.deco-line {
+ background-color: #d65a31; 
+ height: 6px;
+ width: 100%;
+}
+
 .separator-v {
   background: #ccc;
   height: 25px;
