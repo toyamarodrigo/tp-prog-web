@@ -1,4 +1,4 @@
-/* Global */
+/* ----- Global ----- */
 
 * {
   margin: 0;
@@ -28,6 +28,8 @@ a {
   color: #fff;
 }
 
+/* ----- Separadores ----- */
+
 .separator-v {
   background: #ccc;
   height: 25px;
@@ -41,6 +43,16 @@ a {
   margin: 25px auto;
   width: 50px;
 }
+
+.long-separator {
+  background: #7A7A7A;
+  height: 2px;
+  margin: 25px auto;
+  width: 400px;
+}
+
+
+/* ----- TOP nav ----- */
 
 .nav-container {
   display: flex;
@@ -83,7 +95,7 @@ a {
   background-color: #af492a;
 }
 
-/* Landing */
+/* ----- Landings de Secciones ------ */
 
 #RodrigoToyama,
 #WhereDoILive,
@@ -147,8 +159,8 @@ a {
 }
 
 
-/* Main */
-
+/* ----- Main ----- */
+/* ----- Seccion 1 - Quien soy? -----*/
 .section-container {
   min-height: 100%;
 }
@@ -186,6 +198,9 @@ a {
   list-style: none;
   letter-spacing: 5px;
 }
+
+
+/* ----- Skills Cartas ----- */
 
 .section1 {
   display: flex;
@@ -238,6 +253,10 @@ a {
   text-align: center;
 }
 
+
+/* ----- Seccion - Donde vivo? ----- */
+
+/* ----- Carta principal -----*/
 .main-container-card {
   display: flex;
   position: relative;
@@ -267,19 +286,14 @@ a {
   text-align: center;
 }
 
-
-.long-separator {
-  background: #7A7A7A;
-  height: 2px;
-  margin: 25px auto;
-  width: 400px;
-}
-
 .main-card-text p {
   text-align: justify;
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+
+/* ----- Fotos del barrio -----*/
 
 .cards-wrapper-h {
   display: flex;
@@ -314,20 +328,7 @@ a {
   margin: 20px;
 }
 
-.cards-wrapper-v {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 80px;
-  margin-bottom: 80px;
-}
-
-.card-img-container {
-  background-color: #EF8D9C;
-  height: 300px;
-}
+/* ----- Fotos de animales ----- */
 
 .card10,
 .card11,
@@ -352,6 +353,24 @@ a {
   width: 250px;
 }
 
+
+/* ----- Logos/cartas/lugares de Estudio ----- */
+
+.cards-wrapper-v {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.card-img-container {
+  background-color: #EF8D9C;
+  height: 300px;
+}
+
 .card4,
 .card5,
 .card6,
@@ -365,6 +384,7 @@ a {
   box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.40);
 }
 
+/* ----- Primario - Colegio Fernando José Aguer ----- */
 .card4 .card-img-container {
   background-color: #004968;
   opacity: 0.90;
@@ -373,6 +393,18 @@ a {
   justify-content: center;
 }
 
+.card4 .card-study-text {
+  background-color: #004968;
+  opacity: 0.90;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  color: #fff;
+}
+
+/* ----- Secundario - Instituto José Hernandez ----- */
 .card5 .card-img-container {
   background-color: #004968;
   opacity: 0.90;
@@ -381,14 +413,18 @@ a {
   justify-content: center;
 }
 
-.card6 .card-img-container {
-  background-color: #025FA5;
+.card5 .card-study-text {
+  background-color: #004968;
   opacity: 0.90;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100px;
+  color: #fff;
 }
 
+/* ----- Universidad - Tecnicatura en Programacion Informatica ----- */
 .card13 .card-img-container {
   background-color: #fff;
   opacity: 0.90;
@@ -408,48 +444,14 @@ a {
   color: #000;
 }
 
-.card-title-span {
-  position: absolute;
-  top: 57%;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
+/* ----- Cursos - Educacion IT ----- */
 
-.card-subtitle-span {
-  position: absolute;
-  top: 65%;
-  width: 100%;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  letter-spacing: 8px;
-  text-transform: uppercase;
-}
-
-.card4 .card-study-text {
-  background-color: #004968;
+.card6 .card-img-container {
+  background-color: #025FA5;
   opacity: 0.90;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100px;
-  color: #fff;
-}
-
-.card5 .card-study-text {
-  background-color: #004968;
-  opacity: 0.90;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100px;
-  color: #fff;
 }
 
 .card6 .card-title-span {
@@ -495,7 +497,29 @@ a {
   text-align: center;
 }
 
+.card-title-span {
+  position: absolute;
+  top: 57%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
 
+.card-subtitle-span {
+  position: absolute;
+  top: 65%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+/* ----- Seccion - Hobbies ----- */
 
 .card7,
 .card8,
@@ -516,6 +540,7 @@ a {
   margin: 20px;
 }
 
+/* ----- Ryukyukoku Matsuridaiko ----- */
 .card7 .card-title-span {
   position: absolute;
   top: 10%;
@@ -528,6 +553,7 @@ a {
   text-transform: uppercase;
 }
 
+/* ----- Stevie Ray Vaughan ----- */
 .card8 .card-title-span {
   position: absolute;
   top: 10%;
@@ -540,6 +566,7 @@ a {
   text-transform: uppercase;
 }
 
+/* ----- Breaking Bad ----- */
 .card9 .card-title-span {
   position: absolute;
   top: 57%;
@@ -552,7 +579,7 @@ a {
 }
 
 
-/* Footer */
+/* ----- Footer ----- */
 
 footer {
   background: #222831;
@@ -565,6 +592,7 @@ footer {
   background-color: #222831;
 }
 
+/* ----- Parte izquierda Footer ----- */
 .section-footer-container .footer-left {
   float: left;
 }
@@ -592,6 +620,7 @@ footer {
   margin-right: 30px;
 }
 
+/* ----- Parte derecha Footer ----- */
 .section-footer-container .footer-right {
   float: right;
 }
