@@ -28,6 +28,10 @@ a {
   color: #fff;
 }
 
+img {
+  display: block;
+}
+
 .deco-line {
  background-color: #d65a31; 
  height: 6px;
